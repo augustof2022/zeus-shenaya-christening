@@ -118,23 +118,9 @@ img { max-width: 100%; display: block; }
   mix-blend-mode: soft-light;
 }
 
-/* tiny floating friends */
-.floaters span {
-  position: absolute;
-  left: var(--x);
-  top: 104%;
-  font-size: calc(1.6rem * var(--s, 1));
-  opacity: 0;
-  filter: saturate(.85);
-  animation: float-up var(--t, 28s) ease-in-out var(--d, 0s) infinite;
-  will-change: transform, opacity;
-}
-@keyframes float-up {
-  0%   { transform: translate3d(0, 0, 0) rotate(-6deg); opacity: 0; }
-  14%  { opacity: .45; }
-  82%  { opacity: .3; }
-  100% { transform: translate3d(2vw, -125vh, 0) rotate(10deg); opacity: 0; }
-}
+/* (floating emojis removed in v1.8: they were the last moving thing in the
+   background, and they stuttered on some Android phones. The background is
+   now completely still; only the hero photo breathes.) */
 
 /* ============================================================
    HERO
@@ -286,12 +272,10 @@ img { max-width: 100%; display: block; }
   gap: 9px;
   margin-top: 26px;
   padding: 12px 22px;
-  background: rgba(255, 255, 255, .78);
+  background: rgba(255, 250, 245, .92);
   border: 1px solid rgba(255, 255, 255, .95);
   border-radius: 999px;
   box-shadow: 0 12px 28px rgba(120, 72, 45, .30), 0 3px 8px rgba(120, 72, 45, .14);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
   font-weight: 700;
   font-size: .95rem;
   color: var(--brown-400);
@@ -369,12 +353,12 @@ img { max-width: 100%; display: block; }
 }
 
 .card {
-  background: rgba(255, 255, 255, .72);
+  /* mostly solid instead of frosted glass: backdrop blur forced the phone
+     to repaint the card every frame while scrolling (a stutter source) */
+  background: rgba(255, 250, 245, .93);
   border: 1px solid rgba(255, 255, 255, .95);
   border-radius: var(--radius-card);
   box-shadow: var(--shadow-soft);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
   padding: 28px 22px;
 }
 
@@ -474,14 +458,12 @@ img { max-width: 100%; display: block; }
   gap: 10px;
 }
 .cd-cell {
-  background: rgba(255,255,255,.78);
+  background: rgba(255, 250, 245, .93);
   border: 1px solid rgba(255,255,255,.95);
   border-radius: 20px;
   box-shadow: var(--shadow-soft);
   padding: 18px 4px 12px;
   text-align: center;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
 }
 .cd-num {
   display: block;
@@ -688,6 +670,6 @@ img { max-width: 100%; display: block; }
     animation-iteration-count: 1 !important;
     transition-duration: .01ms !important;
   }
-  .floaters, .fluff { display: none; }
+  .fluff { display: none; }
   .reveal, .anim-up, .teddy { opacity: 1 !important; transform: none !important; }
 }
