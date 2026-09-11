@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Zeus &amp; Shenaya | Christening Invitation</title>
+  <meta name="description" content="Join us as Zeus Kyaire and Shenaya Iris receive the sacrament of Baptism. View the details, get directions, and RSVP." />
+  <meta name="theme-color" content="#F6CFD9" />
+
+  <!-- Link preview when the invite is shared in chats (uses the duo photo) -->
+  <meta property="og:title" content="Zeus &amp; Shenaya | Christening Invitation" />
+  <meta property="og:description" content="You're invited to their Christening. Tap for details and RSVP." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/photo-duo.jpg" />
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%B8%3C/text%3E%3C/svg%3E" />
+
+  <!-- Fonts: Great Vibes (names and titles) + Quicksand (everything else) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <!-- If JavaScript is off, still show all content -->
+  <noscript><style>.reveal{opacity:1 !important;transform:none !important;} .sticky-cta{display:none;}</style></noscript>
+</head>
+<body>
+
+  <!-- ============ SVG SPRITE (icons + teddy bears, used everywhere) ============ -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-calendar" viewBox="0 0 24 24">
+        <rect x="3" y="5" width="18" height="16" rx="3" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M3 10h18M8 3v4M16 3v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <circle cx="8.5" cy="14.5" r="1.3" fill="currentColor"/>
+        <circle cx="12" cy="14.5" r="1.3" fill="currentColor"/>
+        <circle cx="15.5" cy="14.5" r="1.3" fill="currentColor"/>
+      </symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24">
+        <path d="M12 21s-7-5.5-7-11a7 7 0 0 1 14 0c0 5.5-7 11-7 11z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <circle cx="12" cy="10" r="2.6" fill="currentColor"/>
+      </symbol>
+      <symbol id="i-church" viewBox="0 0 24 24">
+        <path d="M12 2v4M10 4h4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path d="M5 21v-8l7-5 7 5v8" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+        <path d="M3 21h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path d="M10 21v-3.5a2 2 0 1 1 4 0V21" fill="none" stroke="currentColor" stroke-width="2"/>
+      </symbol>
+      <symbol id="i-gift" viewBox="0 0 24 24">
+        <rect x="4" y="10" width="16" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M12 10v10M4 14h16" stroke="currentColor" stroke-width="2"/>
+        <path d="M12 10c-4 0-5-2-4.5-3.5C8 5 10 5 11 6.5 11.6 7.4 12 10 12 10zm0 0c4 0 5-2 4.5-3.5C16 5 14 5 13 6.5 12.4 7.4 12 10 12 10z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+      </symbol>
+      <symbol id="i-share" viewBox="0 0 24 24">
+        <circle cx="6" cy="12" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/>
+        <circle cx="17" cy="6" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/>
+        <circle cx="17" cy="18" r="2.5" fill="none" stroke="currentColor" stroke-width="2"/>
+        <path d="M8.2 10.8l6.6-3.6M8.2 13.2l6.6 3.6" stroke="currentColor" stroke-width="2"/>
+      </symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24">
+        <path d="M12 4v14m0 0l-6-6m6 6l6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </symbol>
+
+      <!-- Teddy bear face (shared by boy and girl) -->
+      <symbol id="teddy" viewBox="0 0 140 140">
+        <circle cx="38" cy="38" r="20" fill="#C89B78"/>
+        <circle cx="102" cy="38" r="20" fill="#C89B78"/>
+        <circle cx="38" cy="38" r="10" fill="#F0DFCB"/>
+        <circle cx="102" cy="38" r="10" fill="#F0DFCB"/>
+        <circle cx="70" cy="76" r="48" fill="#D9B08C"/>
+        <ellipse cx="70" cy="95" rx="24" ry="18" fill="#F6E7D3"/>
+        <circle cx="53" cy="68" r="5.5" fill="#4A3225"/>
+        <circle cx="87" cy="68" r="5.5" fill="#4A3225"/>
+        <circle cx="54.8" cy="66" r="1.8" fill="#FFFFFF"/>
+        <circle cx="88.8" cy="66" r="1.8" fill="#FFFFFF"/>
+        <ellipse cx="45" cy="85" rx="7" ry="4.5" fill="#EEAFBF" opacity=".6"/>
+        <ellipse cx="95" cy="85" rx="7" ry="4.5" fill="#EEAFBF" opacity=".6"/>
+        <ellipse cx="70" cy="90" rx="7" ry="5.5" fill="#5B4033"/>
+        <path d="M70 96q0 7-8 8M70 96q0 7 8 8" fill="none" stroke="#5B4033" stroke-width="2.5" stroke-linecap="round"/>
+      </symbol>
+
+      <!-- Pink bow for the girl teddy -->
+      <symbol id="bow" viewBox="0 0 48 32">
+        <path d="M24 16L4 4v24l20-12z" fill="#EEAFBF"/>
+        <path d="M24 16l20-12v24L24 16z" fill="#EEAFBF"/>
+        <circle cx="24" cy="16" r="7" fill="#E58CA2"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <!-- ============ SEAMLESS ANIMATED BACKGROUND ============
+       One soft gradient "scene" per section. They crossfade,
+       so there are no hard cuts between sections. -->
+  <div class="bg" aria-hidden="true">
+    <div class="scene scene-hero is-active"></div>
+    <div class="scene scene-details"></div>
+    <div class="scene scene-ceremony"></div>
+    <div class="scene scene-reception"></div>
+    <div class="scene scene-countdown"></div>
+    <div class="scene scene-photos"></div>
+    <div class="scene scene-rsvp"></div>
+    <div class="scene scene-footer"></div>
+
+    <!-- Optional: drop a real fluff photo at assets/texture-fluff.jpg and it blends in automatically -->
+    <div class="texture-photo"></div>
+
+    <!-- Soft drifting light blobs + fine grain (always on, ties all scenes together) -->
+    <div class="fluff fluff-a"></div>
+    <div class="fluff fluff-b"></div>
+    <div class="fluff fluff-c"></div>
+    <div class="fuzz"></div>
+
+    <!-- Slow floating friends -->
+    <div class="floaters">
+      <span style="--x:6%;  --t:26s; --d:0s;   --s:1.15;">🧸</span>
+      <span style="--x:22%; --t:32s; --d:6s;   --s:.8;">🎀</span>
+      <span style="--x:38%; --t:28s; --d:12s;  --s:.9;">🤍</span>
+      <span style="--x:55%; --t:34s; --d:3s;   --s:1;">🐾</span>
+      <span style="--x:70%; --t:27s; --d:9s;   --s:.75;">🎈</span>
+      <span style="--x:84%; --t:31s; --d:15s;  --s:1.05;">🧸</span>
+      <span style="--x:93%; --t:29s; --d:20s;  --s:.8;">🤍</span>
+      <span style="--x:14%; --t:35s; --d:18s;  --s:.7;">🐾</span>
+    </div>
+  </div>
+
+  <!-- ============ HERO ============ -->
+  <header class="hero" id="top" data-scene="hero">
+    <!-- Photo of the little ones as hero background; fades out at the bottom
+         into the soft background so there is no hard cut -->
+    <div class="hero-photo" aria-hidden="true"></div>
+    <!-- Soft glow behind the text so the names stay readable over the photo -->
+    <div class="hero-scrim" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+
+      <p class="eyebrow anim-up" style="--d:.3s">With joyful hearts, we invite you to the Christening of</p>
+
+      <h1 class="names">
+        <span class="name name-boy anim-up" style="--d:.45s">Zeus Kyaire</span>
+        <span class="amp anim-up" style="--d:.6s">&amp;</span>
+        <span class="name name-girl anim-up" style="--d:.75s">Shenaya Iris</span>
+        <span class="surname anim-up" style="--d:.9s">M. Sanchez</span>
+      </h1>
+
+      <div class="date-pill anim-up" style="--d:1.25s">
+        <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>
+        <span data-event-date>Date to be announced</span>
+      </div>
+
+      <p class="verse anim-up" style="--d:1.4s">
+        "Let the little children come to me."<br />
+        <span>Mark 10:14</span>
+      </p>
+
+    </div>
+
+    <a class="scroll-hint anim-up" style="--d:1.55s" href="#details">
+      <span>Scroll for details</span>
+      <svg class="icon bounce" aria-hidden="true"><use href="#i-arrow"/></svg>
+    </a>
+  </header>
+
+  <main>
+
+    <!-- ============ DETAILS CARD ============ -->
+    <section class="section" id="details" data-scene="details">
+      <div class="card details-card reveal">
+        <h2 class="card-title">Christening</h2>
+        <ul class="detail-list">
+          <li>
+            <span class="detail-icon"><svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg></span>
+            <span class="detail-text">
+              <strong data-event-date-long>Date to be announced</strong>
+              <small>Save the date</small>
+            </span>
+          </li>
+          <li>
+            <span class="detail-icon"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg></span>
+            <span class="detail-text">
+              <strong>10:00 AM call time</strong>
+              <small>Please come a little early</small>
+            </span>
+          </li>
+          <li>
+            <span class="detail-icon"><svg class="icon" aria-hidden="true"><use href="#i-church"/></svg></span>
+            <span class="detail-text">
+              <strong>St. Andrew the Apostle Parish Church</strong>
+              <small>Poblacion, Norzagaray, Bulacan</small>
+            </span>
+          </li>
+        </ul>
+        <a class="btn btn-primary btn-block" data-add-calendar href="#" target="_blank" rel="noopener">
+          <svg class="icon" aria-hidden="true"><use href="#i-calendar"/></svg>
+          Add to Calendar
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ CEREMONY ============ -->
+    <section class="section" id="ceremony" data-scene="ceremony">
+      <div class="reveal">
+        <h2 class="section-title">The Ceremony</h2>
+        <p class="section-sub">Where the little ones will be baptized</p>
+      </div>
+      <div class="card venue-card reveal" style="--d:.12s">
+        <span class="venue-badge"><svg class="icon" aria-hidden="true"><use href="#i-church"/></svg></span>
+        <h3>St. Andrew the Apostle Parish Church</h3>
+        <p class="venue-address">Poblacion, Norzagaray, Bulacan</p>
+        <p class="venue-time">
+          <svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg>
+          Call time: 10:00 AM
+        </p>
+        <a class="btn btn-primary btn-block" href="https://maps.app.goo.gl/HVtfSKbYDGWxvS72A" target="_blank" rel="noopener">
+          <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+          Get Directions
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ RECEPTION ============ -->
+    <section class="section" id="reception" data-scene="reception">
+      <div class="reveal">
+        <h2 class="section-title">The Reception</h2>
+        <p class="section-sub">Food and celebration after the rites</p>
+      </div>
+      <div class="card venue-card reveal" style="--d:.12s">
+        <span class="venue-badge venue-badge-alt"><svg class="icon" aria-hidden="true"><use href="#i-gift"/></svg></span>
+        <h3 data-reception-name>Venue to be announced</h3>
+        <p class="venue-address" data-reception-address>Details coming soon</p>
+        <a class="btn btn-primary btn-block" data-reception-map href="#" target="_blank" rel="noopener" hidden>
+          <svg class="icon" aria-hidden="true"><use href="#i-pin"/></svg>
+          Get Directions
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ COUNTDOWN ============ -->
+    <section class="section" id="countdown" data-scene="countdown">
+      <div class="reveal">
+        <h2 class="section-title">Counting Down</h2>
+        <p class="section-sub">Until the big day</p>
+      </div>
+      <div class="countdown reveal" style="--d:.12s">
+        <div class="cd-cell"><span class="cd-num" data-cd="days">0</span><span class="cd-label">Days</span></div>
+        <div class="cd-cell"><span class="cd-num" data-cd="hours">00</span><span class="cd-label">Hours</span></div>
+        <div class="cd-cell"><span class="cd-num" data-cd="minutes">00</span><span class="cd-label">Mins</span></div>
+        <div class="cd-cell"><span class="cd-num" data-cd="seconds">00</span><span class="cd-label">Secs</span></div>
+      </div>
+      <div class="card cd-done" data-cd-done hidden>
+        <p>🎉 The little ones have been baptized. Thank you for celebrating with us!</p>
+      </div>
+    </section>
+
+    <!-- ============ PHOTOS ============ -->
+    <section class="section" id="little-ones" data-scene="photos">
+      <div class="reveal">
+        <h2 class="section-title">Meet the Little Ones</h2>
+        <p class="section-sub">Our double bundle of joy</p>
+      </div>
+
+      <figure class="duo reveal">
+        <img src="assets/photo-duo.jpg" alt="Zeus Kyaire and Shenaya Iris together" loading="lazy" />
+      </figure>
+
+      <div class="solos">
+        <figure class="solo reveal" style="--d:.1s">
+          <img src="assets/photo-zeus.jpg" alt="Zeus Kyaire M. Sanchez" loading="lazy" />
+          <figcaption><span class="tag tag-boy">Zeus Kyaire</span></figcaption>
+        </figure>
+        <figure class="solo reveal" style="--d:.22s">
+          <img src="assets/photo-shenaya.jpg" alt="Shenaya Iris M. Sanchez" loading="lazy" />
+          <figcaption><span class="tag tag-girl">Shenaya Iris</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ RSVP ============ -->
+    <section class="section" id="rsvp" data-scene="rsvp">
+      <div class="reveal">
+        <h2 class="section-title">RSVP</h2>
+        <p class="section-sub">Kindly confirm so we can save you a seat and a plate</p>
+      </div>
+
+      <form class="card rsvp-form reveal" style="--d:.12s" id="rsvp-form" novalidate>
+        <label class="field">
+          <span>Your name</span>
+          <input type="text" name="name" placeholder="e.g. Juan &amp; Maria Dela Cruz" autocomplete="name" required />
+        </label>
+        <label class="field">
+          <span>How many are coming?</span>
+          <select name="guests">
+            <option value="1">1 guest</option>
+            <option value="2" selected>2 guests</option>
+            <option value="3">3 guests</option>
+            <option value="4">4 guests</option>
+            <option value="5+">5 or more</option>
+          </select>
+        </label>
+        <label class="field">
+          <span>Message for the family (optional)</span>
+          <textarea name="message" rows="3" placeholder="See you there!"></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary btn-block btn-big" data-submit>Confirm Attendance</button>
+        <a class="btn btn-ghost btn-block" data-messenger href="#" target="_blank" rel="noopener" hidden>Confirm via Messenger instead</a>
+        <p class="form-note">Your reply goes straight to the Sanchez family. 🤍</p>
+      </form>
+
+      <div class="card confirm-card" data-confirm hidden>
+        <span class="confirm-badge">🧸</span>
+        <h3>You're on the list, <span data-confirm-name>friend</span>!</h3>
+        <p>Thank you for confirming. We are so excited to celebrate this blessing with you.</p>
+        <div class="confirm-actions">
+          <a class="btn btn-primary btn-block" data-add-calendar href="#" target="_blank" rel="noopener">Add to Calendar</a>
+          <button type="button" class="btn btn-ghost btn-block" data-share>Share this Invite</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" data-scene="footer">
+    <svg class="teddy-mini" viewBox="0 0 140 140" aria-hidden="true"><use href="#teddy"/></svg>
+    <p class="footer-names">Zeus Kyaire <span class="amp-inline">&amp;</span> Shenaya Iris</p>
+    <p class="footer-line">With love and prayers, the Sanchez family</p>
+    <button type="button" class="btn btn-ghost" data-share>
+      <svg class="icon" aria-hidden="true"><use href="#i-share"/></svg>
+      Share this invitation
+    </button>
+    <p class="footer-tiny">Made with 🤍 for our little miracles</p>
+  </footer>
+
+  <!-- ============ STICKY RSVP BAR ============ -->
+  <div class="sticky-cta" data-sticky>
+    <a href="#rsvp" class="btn btn-primary btn-block btn-big">RSVP Now</a>
+  </div>
+
+  <!-- ============ TOAST ============ -->
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
