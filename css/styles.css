@@ -89,7 +89,8 @@ img { max-width: 100%; display: block; }
   filter: saturate(.9) brightness(1.03);
 }
 
-/* big soft light blobs that drift slowly (the "fluff") */
+/* big soft light blobs, kept still so the fur never seems to move;
+   only the hero photo breathes */
 .fluff {
   position: absolute;
   border-radius: 50%;
@@ -99,26 +100,14 @@ img { max-width: 100%; display: block; }
 .fluff-a {
   width: 62vmax; height: 62vmax; left: -22vmax; top: -18vmax;
   background: radial-gradient(circle, rgba(255,255,255,.22) 0%, rgba(255,255,255,0) 62%);
-  animation: drift-a 26s ease-in-out infinite alternate;
 }
 .fluff-b {
   width: 54vmax; height: 54vmax; right: -20vmax; bottom: -16vmax;
   background: radial-gradient(circle, rgba(246,207,217,.24) 0%, rgba(246,207,217,0) 62%);
-  animation: drift-b 32s ease-in-out infinite alternate;
 }
 .fluff-c {
   width: 40vmax; height: 40vmax; left: 8vmax; bottom: 4vmax;
   background: radial-gradient(circle, rgba(223,195,168,.18) 0%, rgba(223,195,168,0) 60%);
-  animation: drift-a 38s ease-in-out 4s infinite alternate;
-}
-
-@keyframes drift-a {
-  from { transform: translate3d(0, 0, 0) scale(1); }
-  to   { transform: translate3d(6vmax, 5vmax, 0) scale(1.14); }
-}
-@keyframes drift-b {
-  from { transform: translate3d(0, 0, 0) scale(1.08); }
-  to   { transform: translate3d(-5vmax, -6vmax, 0) scale(.96); }
 }
 
 /* fine grain so the background feels like plush fabric, not flat plastic */
@@ -153,9 +142,9 @@ img { max-width: 100%; display: block; }
 .hero {
   min-height: 100svh;
   display: grid;
-  place-items: end center; /* copy sits low, near the scroll hint */
+  place-items: start center; /* copy flows from a fixed top offset, same on every phone */
   text-align: center;
-  padding: 48px var(--gutter) 108px; /* bottom padding = proper gap above the scroll hint */
+  padding: 48px var(--gutter) 64px;
   position: relative;
 }
 /* hero photo background: melts into the scene below, no hard cut */
@@ -199,6 +188,10 @@ img { max-width: 100%; display: block; }
   z-index: 1;
   max-width: 640px;
   margin: 0 auto;
+  /* keep the copy below the kids' faces on every screen, including
+     Messenger's in-app browser on iPhone where the viewport is shorter */
+  margin-top: 45vh;
+  margin-top: 45svh;
   /* gentle light halo so text stays readable if it overlaps the photo */
   text-shadow: 0 1px 12px rgba(255, 250, 244, .85);
   /* soft floating, like the photo frames */
