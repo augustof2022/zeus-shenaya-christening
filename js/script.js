@@ -22,7 +22,7 @@ const CONFIG = {
   },
 
   rsvp: {
-    endpoint: '',     // optional: Google Apps Script or Formspree URL
+    endpoint: 'https://script.google.com/macros/s/AKfycbzEqkxVpCxIxbT3gNhKCug43GZ0zpWTKVyEuFHMA-r3GQXXpvK5qgkJvUy61R07xPH_/exec',     // optional: Google Apps Script or Formspree URL
     messengerUrl: '', // optional: e.g. 'https://m.me/your.username'
   },
 };
