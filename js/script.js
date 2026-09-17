@@ -6,7 +6,7 @@
 const CONFIG = {
   /* Event date and time (Christening day).
      Format: YYYY-MM-DDTHH:MM:SS+08:00 (PH time) */
-  eventISO: '2026-10-11T10:00:00+08:00',
+  eventISO: '2026-10-11T10:30:00+08:00',
 
   church: {
     name: 'St. Andrew the Apostle Parish Church',
