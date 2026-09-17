@@ -11,7 +11,7 @@ const CONFIG = {
   church: {
     name: 'St. Andrew the Apostle Parish Church',
     address: 'Poblacion, Norzagaray, Bulacan',
-    callTime: '10:00 AM',
+    callTime: '10:30 AM',
     mapUrl: 'https://maps.app.goo.gl/HVtfSKbYDGWxvS72A',
   },
 
